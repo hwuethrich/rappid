@@ -1,0 +1,8 @@
+<div class="panel panel-plain">
+  <div class="panel-heading" ng-if="heading || icon">
+    <i ng-if="icon" class="fa fa-{{icon}}"></i>
+    {{heading}}
+    <a href="#" ng-if="hasConfig" ng-click="onConfigClick()" class="text-muted pull-right"><i class="fa fa-cog"></i></a>
+  </div>
+  <div class="panel-body" ng-transclude></div>
+</div>

@@ -1,0 +1,127 @@
+<div class="well">
+  Find me in <code>partials/dashboards/home.html</code>
+</div>
+
+<div class="row">
+
+  <div class="col-sm-4">
+    <panel icon="globe" heading="Internet Feed" on-config-click="hello()">
+      <gauge class="col-xs-6 col-sm-12 col-lg-6" min='0' max='100' value='{{gaugeVal1}}' title='Upload' ></gauge>
+      <gauge class="col-xs-6 col-sm-12 col-lg-6" min='0' max='100' value='{{gaugeVal2}}' title='Download'></gauge>
+    </panel>
+  </div>
+
+  <div class="col-sm-4">
+    <panel icon="globe" heading="Kombi/KTM">
+      <gauge class="col-xs-6 col-sm-12 col-lg-6" min='0' max='100' value='{{gaugeVal3}}' title='Upload'></gauge>
+      <gauge class="col-xs-6 col-sm-12 col-lg-6" min='0' max='100' value='{{gaugeVal4}}' title='Download'></gauge>
+    </panel>
+  </div>
+
+  <div class="col-sm-4">
+    <panel icon="globe" heading="Butan">
+      <gauge class="col-xs-6 col-sm-12 col-lg-6" min='0' max='100' value='{{gaugeVal1}}' title='Upload' ></gauge>
+      <gauge class="col-xs-6 col-sm-12 col-lg-6" min='0' max='100' value='{{gaugeVal2}}' title='Download'></gauge>
+    </panel>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-4 col-lg-5">
+    <panel>
+      <div class="row">
+        <counter class="col-xs-6" type="horizontal" value="{{gaugeVal1 | number:1}}" icon="chevron-up text-success" label="Mbit/s"></counter>
+        <counter class="col-xs-6" type="horizontal" value="{{gaugeVal2 | number:1}}" icon="chevron-down text-danger" label="MBit/s"></counter>
+      </div>
+    </panel>
+  </div>
+
+  <div class="col-sm-4 col-lg-2">
+    <panel icon="globe" heading="Butan">
+      <gauge min='0' max='100' value='{{gaugeVal1}}' title='DNS' ></gauge>
+    </panel>
+  </div>
+
+  <div class="col-sm-4 col-lg-5">
+    <panel>
+      <div class="row">
+        <counter class="col-xs-6" type="horizontal" value="{{gaugeVal3 | number:0}}" icon="envelope text-info" label="Mails/s"></counter>
+        <counter class="col-xs-6" type="horizontal" value="{{gaugeVal4 | number:0}}" icon="bug text-danger" label="SPAM/s"></counter>
+      </div>
+    </panel>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <panel icon="bug" heading="Bug status">
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: {{gaugeVal1}}%">
+          {{gaugeVal1 | number:2}}
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" style="width: {{gaugeVal2}}%">
+          {{gaugeVal2 | number:2}}
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning" style="width: {{gaugeVal3}}%">
+          {{gaugeVal3 | number:2}}
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: {{gaugeVal3 / 2}}%">
+          {{gaugeVal3 | number:2}}
+        </div>
+        <div class="progress-bar progress-bar-info" style="width: {{gaugeVal4 / 2}}%">
+          {{gaugeVal4 | number:2}}
+        </div>
+      </div>
+    </panel>
+  </div>
+
+  <div class="col-sm-12">
+    <panel icon="send" heading="Another panel">
+      <div class="list-group">
+        <a href="#" class="list-group-item">
+          Dapibus ac facilisis in
+        </a>
+        <a href="#" class="list-group-item">
+          Morbi leo risus
+        </a>
+        <a href="#" class="list-group-item">
+          Porta ac consectetur ac
+        </a>
+        <a href="#" class="list-group-item">
+          Vestibulum at eros
+        </a>
+      </div>
+    </panel>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-md-12">
+    <panel icon="list" heading="Table">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <th ng-repeat="col in columns">{{col}}</th>
+          </thead>
+          <tbody>
+            <tr ng-repeat="record in records">
+              <td ng-repeat="col in columns">{{record[col]}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </panel>
+  </div>
+
+</div>
+

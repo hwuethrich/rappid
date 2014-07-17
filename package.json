@@ -1,0 +1,36 @@
+{
+  "author": "Simeon Bateman",
+  "name": "Brunch-With-Marionette",
+  "description": "MarionetteJS application template for Brunch.io",
+  "version": "0.0.2",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/simbco/brunch-with-marionette"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.1.x"
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "test": "brunch test"
+  },
+  "dependencies": {
+    "javascript-brunch": "~1.7.1",
+    "coffee-script-brunch": "~1.7.3",
+    "coffeelint-brunch": "~1.7.0",
+
+    "css-brunch": "~1.7.0",
+    "less-brunch": "~1.7.1",
+
+    "uglify-js-brunch": "~1.7.7",
+    "clean-css-brunch": "~1.7.1",
+    "auto-reload-brunch": "~1.7.3"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "license": "BSD"
+}

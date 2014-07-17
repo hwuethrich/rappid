@@ -1,0 +1,48 @@
+{
+  "name": "marionette-test",
+  "version": "0.1.0",
+  "main": "public/javascripts/app.js",
+  "authors": [
+    "Hannes Wüthrich <hw@5px.ch>"
+  ],
+  "description": "Test",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.1.0",
+
+    "angular": "~1.2.0",
+    "angular-cookies": "~1.2.0",
+    "angular-resource": "~1.2.0",
+    "angular-route": "~1.2.0",
+    "angular-leaflet": "master",
+    "angular-justgage": "master",
+    "justgage-bower": "toorshia/justgage"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": "dist/js/bootstrap.js"
+    },
+    "font-awesome": {
+      "main": "*"
+    },
+    "angular": {
+      "main": [
+        "angular.js",
+        "angular-csp.css"
+      ]
+    },
+    "angular-justgage": {
+      "dependencies": {
+        "angular": "*",
+        "justgage-bower": "*"
+      }
+    }
+  }
+}
